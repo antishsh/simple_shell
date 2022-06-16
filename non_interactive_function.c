@@ -2,7 +2,6 @@
 
 /**
  * non_interactive - handles non_interactive mode
- *
  * Return: void
  */
 

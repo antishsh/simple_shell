@@ -2,12 +2,11 @@
 
 
 /**
- *_strtok_r - tokenizes a string
- *@string: string to be tokenized
- *@delim: delimiter to be used to tokenize the string
- *@save_ptr: pointer to be used to keep track of the next token
- *
- *Return: The next available token
+ * _strtok_r - tokenizes a string
+ * @string: string to be tokenized
+ * @delim: delimiter to be used to tokenize the string
+ * @save_ptr: pointer to be used to keep track of the next token
+ * Return: The next available token
  */
 char *_strtok_r(char *string, char *delim, char **save_ptr)
 {
@@ -44,7 +43,6 @@ char *_strtok_r(char *string, char *delim, char **save_ptr)
 /**
  * _atoi - changes a string to an integer
  * @s: the string to be changed
- *
  * Return: the converted int
  */
 int _atoi(char *s)
@@ -69,7 +67,6 @@ int _atoi(char *s)
  * @ptr: pointer to the memory previously allocated with a call to malloc
  * @old_size: size of ptr
  * @new_size: size of the new memory to be allocated
- *
  * Return: pointer to the address of the new memory block
  */
 void *_realloc(void *ptr, unsigned int old_size, unsigned int new_size)
@@ -108,7 +105,6 @@ void *_realloc(void *ptr, unsigned int old_size, unsigned int new_size)
 /**
  * ctrl_c_handler - handles the signal raised by CTRL-C
  * @signum: signal number
- *
  * Return: void
  */
 void ctrl_c_handler(int signum)
@@ -120,7 +116,6 @@ void ctrl_c_handler(int signum)
 /**
  * remove_comment - removes/ignores everything after a '#' char
  * @input: input to be used
- *
  * Return: void
  */
 void remove_comment(char *input)

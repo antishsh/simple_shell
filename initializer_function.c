@@ -4,7 +4,6 @@
  * initializer - starts executing everything
  * @current_command: try to check current token
  * @type_command: parse token
- *
  * Return: void function
  */
 

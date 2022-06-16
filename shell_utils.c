@@ -49,7 +49,6 @@ int parse_command(char *command)
  * execute_command - executes a command based on it's type
  * @tokenized_command: tokenized form of the command (ls -l == {ls, -l, NULL})
  * @command_type: type of the command
- *
  * Return: void
  */
 void execute_command(char **tokenized_command, int command_type)
@@ -90,7 +89,6 @@ void execute_command(char **tokenized_command, int command_type)
 /**
  * check_path - checks if a command is found in the PATH
  * @command: command to be used
- *
  * Return: path where the command is found in, NULL if not found
  */
 char *check_path(char *command)
@@ -127,9 +125,9 @@ char *check_path(char *command)
 /**
  * get_func - retrieves a function based on the command given and a mapping
  * @command: string to check against the mapping
- *
  * Return: pointer to the proper function, or null on fail
  */
+
 void (*get_func(char *command))(char **)
 {
 	int i;
@@ -148,9 +146,9 @@ void (*get_func(char *command))(char **)
 /**
  * _getenv - gets the value of an environment variable
  * @name: name of the environment variable
- *
  * Return: the value of the variable as a string
  */
+
 char *_getenv(char *name)
 {
 	char **my_environ;
